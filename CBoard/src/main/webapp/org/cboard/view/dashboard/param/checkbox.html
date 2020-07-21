@@ -1,0 +1,16 @@
+<div class="btn-group" style="cursor: move;margin: 3px 3px;display: block;">
+    <div class="row"  style="width: 100%;">
+        <div class="col-md-1" style="margin-top: 5px;margin-left: 10px;">
+            {{param.name}}
+        </div>
+        <div class="col-md-6" >
+            <div class="c-range-picker-p">
+                <div class="checkbox">
+                    <label style="margin-right: 20px;" ng-repeat="d in param.selects">
+                        <input type="checkbox" name="remember_me" ng-attr-value="{{d}}" ng-model="param.checks[d]" ng-click="clickCheckBox(crow)" > {{d}}
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
